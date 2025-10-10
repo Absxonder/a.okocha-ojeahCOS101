@@ -7,6 +7,6 @@ fn main() {
 	let a = p * ( 1.0 + (r / 100.0)) * t;
 	println!("Amount is {}", a);
 	let si = a - p;
-	println!("Simple Interest is {}" si);
+	println!("Simple Interest is {}", si);
 
 }
