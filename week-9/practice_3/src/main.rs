@@ -1,8 +1,6 @@
-use std::io::Read;
+use std::fs;
 
 fn main() {
-    let mut file = std::fs::File::open("welcome_message.txt").unwrap();
-    let mut contents = String::new();
-    file.read_to_string(&mut contents).unwrap();
-    print!("{}", contents);
+    fs::remove_file("data.txt").expect("could not remove file");
+    println!("file is removed");
 }
